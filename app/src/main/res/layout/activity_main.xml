@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3A967"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Field1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/Field2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Result"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="+"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="-"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Mul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="X"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="/"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/Cls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="CLR"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+
+
+</LinearLayout>
