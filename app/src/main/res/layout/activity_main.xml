@@ -91,7 +91,5 @@
         android:text="CLR"
         android:textSize="25sp"
         android:textStyle="italic"/>
-
-
-
+        />
 </LinearLayout>

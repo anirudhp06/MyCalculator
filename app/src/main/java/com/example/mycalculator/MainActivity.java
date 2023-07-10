@@ -23,35 +23,29 @@ public class MainActivity extends AppCompatActivity {
             oper2 = Double.parseDouble(opr2.getText().toString());
         }
         catch (NumberFormatException n){
-            /*
-            * App eventually crashes without try-catch or dosen't respond to anything as Double can't parse empty values.
-            * Need to use try-catch block because if user passes no values, displaying toast is not possible
-            * setting 2 operators to some default value to detect if user hasn't passed any values.
-            * */
-            oper1=-5555555.00;
-            oper2=-5555555.00;
+            Toast toast=Toast.makeText(MainActivity.this,"Please enter valid input",Toast.LENGTH_LONG);
+            toast.show();
+            opr1.requestFocus();
+            return;
         }
         Double result;
-        if(oper1!=-5555555.00 && oper2!=-5555555.00){
-            switch (ops) {
-                case "+":
-                    result = oper1 + oper2;
-                    txtresult.setText(Double.toString(result));
-                    break;
-                case "-":
-                    result = oper1 - oper2;
-                    txtresult.setText(Double.toString(result));
-                case "*":
-                    result = oper1 * oper2;
-                    txtresult.setText(Double.toString(result));
-                case "/":
-                    result = oper1 / oper2;
-                    txtresult.setText(Double.toString(result));
-            }
-        }
-        else{
-            Toast toast=Toast.makeText(MainActivity.this,"Please enter all fields",Toast.LENGTH_LONG);
-            toast.show();
+        switch (ops) {
+            case "+":
+                result = oper1 + oper2;
+                txtresult.setText(Double.toString(result));
+                break;
+            case "-":
+                result = oper1 - oper2;
+                txtresult.setText(Double.toString(result));
+                break;
+            case "*":
+                result = oper1 * oper2;
+                txtresult.setText(Double.toString(result));
+                break;
+            case "/":
+                result = oper1 / oper2;
+                txtresult.setText(Double.toString(result));
+                break;
         }
     }
 
